@@ -1,37 +1,36 @@
-# WORD COUNT
+# command-line-arguments-to-count-word
 ## AIM:
-To write a python program for getting the word count from a text.
+To write a python program for getting the word count from the contents of a file using command line arguments.
+## EQUIPEMENT'S REQUIRED: 
+PC
+Anaconda - Python 3.7
+## ALGORITHM: 
+Step 1: import os
 
-## EQUIPEMENT'S REQUIRED:
-PC Anaconda - Python 3.7
+Step 2: Open file using open().
 
-## ALGORITHM:
-Step 1:Open the file in read mode and handle it in text mode
+Step 3: Use for loop
 
-Step 2:Read the text using read() function.
+Step 4: Use len to count number of words.
 
-Step 3:Split the text using space separator .we assume that words in a sentence are separated by a space character.
+Step 5: Give print.
 
-Step 4:The length of the split list should equal the numbe of words in the text file.
+Step 6: End of the program
 
-Step 5:You can refine the count by clearing the string prior t splitting or validatting the words after splitting
-
-```
-Developed by : DEVADARSHAN A S
-Register number: 212222110007
-```
 ## PROGRAM:
 ```python
-
-num=0
-with open("git.txt","r") as f1:
-    for i in f1:
-        word=i.split()
-        num += len(word)
-print("The number of words are in the file is ",num)
+#Developed by: DEVADARSHAN A S
+#Register number: 212222110007
+import sys
+count= 0
+with open(sys.argv[1],'r') as f1:
+    for line in f1:
+        word= line.split()
+        count += len(word)
+print("word count in file = ",count)
 ```
 ## OUTPUT:
-![image](https://github.com/DEVADARSHAN2/Word-count/assets/119432150/9fc2ab5d-14cc-41c4-af32-473b13c9a2c6)
-![image](https://github.com/DEVADARSHAN2/Word-count/assets/119432150/17df9b45-41ca-4106-8d73-02445a963d1a)
+![image](https://github.com/DEVADARSHAN2/Word-count/assets/119432150/3709e70b-d34c-4dfd-9ae4-4e800a07b9a9)
+
 ## RESULT:
-Thus the program is written to find the word count from a text.
+Thus the program is written to find the word count from the contents of a file using command line arguments.
