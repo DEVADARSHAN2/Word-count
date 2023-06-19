@@ -19,8 +19,8 @@ Step 6: End of the program
 
 ## PROGRAM:
 ```python
-#Developed by: DEVADARSHAN A S
-#Register number: 212222110007
+Developed by: DEVADARSHAN A S
+Register number: 212222110007
 ```
 ```
 import sys
