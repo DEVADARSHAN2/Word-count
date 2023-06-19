@@ -21,6 +21,8 @@ Step 6: End of the program
 ```python
 #Developed by: DEVADARSHAN A S
 #Register number: 212222110007
+```
+```
 import sys
 count= 0
 with open(sys.argv[1],'r') as f1:
